@@ -17,7 +17,7 @@ namespace TicTacToe.Models
             this.Name = Names;
         }
 
-        //test numero 2
+        //test numero 2 buenosdias
         public void Mark(int Position,Board TicTacToe)
         {
             TicTacToe.Mark(Position);
