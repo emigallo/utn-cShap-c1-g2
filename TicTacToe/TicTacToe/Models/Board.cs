@@ -26,6 +26,7 @@ namespace TicTacToe.Models
                 //Marcar el map con el simbolo del jugador que lo llama
                 //Player player = new Player();
                 Map.Add(position, Symbol);
+
             }
             else
             {
