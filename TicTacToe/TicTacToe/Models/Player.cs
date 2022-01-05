@@ -20,7 +20,7 @@ namespace TicTacToe.Models
         //test numero 2
         public void Mark(int Position,Board TicTacToe)
         {
-            TicTacToe.Mark(Position);
+            TicTacToe.Mark(Position, this.PlayerSymbol);
         }
 
     }

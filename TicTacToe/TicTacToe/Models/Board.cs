@@ -19,10 +19,11 @@ namespace TicTacToe.Models
         }
 
         //Marca el tablero
-        public void Mark(int positon)
+        public void Mark(int positon, char Symbol)
         {
             if (IsValidCell(positon))
             {
+
                 //Marcar el map con el simbolo del jugador que lo llama
 
             }
@@ -32,6 +33,7 @@ namespace TicTacToe.Models
         //Revisa todo el map y verifica quien gana
         public bool IsThereAWinner()
         {
+
             //Verify(jugador1.Symbol)
             //Validaciones(jugador1.Symbol)
             //Validaciones(jugador2.Symbol)
@@ -42,12 +44,14 @@ namespace TicTacToe.Models
         //Si el tablero esta lleno retorna true
         private bool FullBoard()
         {
+
             return true;
         }
 
         //Elije al primer Jugador : 'X' o 'O'
         public bool ChooseFirstPlayer()
         {
+
             int num = new Random().Next(0,1);
             if(num == 1) { 
                 return true;
