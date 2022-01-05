@@ -36,14 +36,33 @@ namespace TicTacToe.Models
         }
 
         //Revisa todo el map y verifica quien gana
-        public bool IsThereAWinner()
+        /*
+         *  si gano unjugador retorna susimbolo
+         *  si no retorna null
+         */
+        public string IsThereAWinner()
         {
-
+            string winner = null;
+            if(!FullBoard())
+            {
+                if(VerifyRows() != null)
+                {
+                    winner = VerifyRows();
+                }
+                if(VerifyDiagonals() != null)
+                {
+                    winner = VerifyDiagonals();
+                }
+                if(VerifyColumns() != null)
+                {
+                    winner = VerifyColumns();
+                }
+            }
+            return winner;
             //Verify(jugador1.Symbol)
             //Validaciones(jugador1.Symbol)
             //Validaciones(jugador2.Symbol)
             //Tiene que usar FullBoard para saber si es empate o si sigue el juego en curso
-            return true;
         }
 
         //Si el tablero esta lleno retorna true
@@ -181,7 +200,5 @@ namespace TicTacToe.Models
             }
             return null;
         }
-
-
     }
 }

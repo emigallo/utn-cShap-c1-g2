@@ -22,6 +22,5 @@ namespace TicTacToe.Models
         {
             TicTacToe.Mark(Position, this.PlayerSymbol);
         }
-
     }
 }
