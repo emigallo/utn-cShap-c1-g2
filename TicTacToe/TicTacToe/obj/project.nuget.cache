@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "13fBVKKiV6iq6IMLLZUH60uvsr1SUfDlZ7DYDIxg+eQaEDB88kelXfj1gJRvk+0Dkc1oFl4Gnz26gboirK7H3Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rdesanvi\\source\\repos\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+=======
   "dgSpecHash": "+Tvde7dhdROUNVMCuhYQl0JFXROA2xOUIkoDgP1C8MjIbLLCLfe7mqZTw++XfmcocaDLURdS6v9QdRAab+KNzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-ok\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+>>>>>>> 0f8c4ea1ba555c45dfefa9ca9f4e802148346bbf
   "expectedPackageFiles": [],
   "logs": []
 }

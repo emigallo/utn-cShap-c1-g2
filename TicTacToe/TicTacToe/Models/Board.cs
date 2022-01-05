@@ -19,13 +19,17 @@ namespace TicTacToe.Models
         }
 
         //Marca el tablero
-        public void Mark(int positon, char Symbol)
+        public void Mark(int position, char Symbol)
         {
-            if (IsValidCell(positon))
+            if (IsValidCell(position))
             {
-
                 //Marcar el map con el simbolo del jugador que lo llama
-
+                //Player player = new Player();
+                Map.Add(position, Symbol);
+            }
+            else
+            {
+                Console.WriteLine("Debe seleccionar una posicion valida");
             }
             Turns++;
         }
