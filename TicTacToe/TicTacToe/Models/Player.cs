@@ -9,21 +9,19 @@ namespace TicTacToe.Models
         // public string Name { get; init; }
         private char PlayerSymbol { get; init; }
         //Simbolo para jugador o 'X' o 'O'
-        public Player(char Symbol)
+        private string Name { get; set; }
+        public Player(char Symbol, string Names)
         {
             this.PlayerSymbol = Symbol;
             this.IsFirstPlayer = false;
+            this.Name = Names;
         }
 
-        //Marca un casillero del tateti
-        public void Mark(int Position,Board Boards) 
+
+        public void Mark(int Position,Board TicTacToe)
         {
-            //if(Occupied(Position,Boards))
-            /**/
-            //Primero tengo que preguntar si la celda esta ocupada
-            Boards.Map[Position] = this.PlayerSymbol;
-
-
+            TicTacToe.Mark(Position);
         }
+
     }
 }
