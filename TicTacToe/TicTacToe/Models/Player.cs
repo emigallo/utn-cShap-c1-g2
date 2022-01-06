@@ -3,7 +3,7 @@
 
 namespace TicTacToe.Models
 {
-    internal class Player
+    public class Player
     {
         public bool IsFirstPlayer { get; set; }
         // public string Name { get; init; }

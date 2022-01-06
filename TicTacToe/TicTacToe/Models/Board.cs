@@ -7,15 +7,29 @@ namespace TicTacToe.Models
         private Dictionary<int, char> Map;
         /*Map[20]=Simbolo*/
         private int Turns { get; set; }
-        
-        
+
         public Board()
         {
             Map = new Dictionary<int, char>();
-            for(int i = 1; i < 10; i++){
+            for (int i = 1; i < 10; i++)
+            {
                 Map.Add(i, ' ');
             }
             Turns = 0;
+        }
+
+        public void Draw()
+        {
+            for (int i = 1; i < 10; i++)
+            {
+                Console.Write(Map[i]);
+                Console.Write('|');
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine();
+                }
+            }
+
         }
 
         //Marca el tablero
@@ -23,16 +37,15 @@ namespace TicTacToe.Models
         {
             if (IsValidCell(position))
             {
-                //Marcar el map con el simbolo del jugador que lo llama
-                //Player player = new Player();
-                Map.Add(position, Symbol);
+                Map[position] = Symbol;
+
 
             }
             else
             {
                 Console.WriteLine("Debe seleccionar una posicion valida");
             }
-            Turns++;
+            this.Turns++;
         }
 
         //Revisa todo el map y verifica quien gana
@@ -42,42 +55,60 @@ namespace TicTacToe.Models
          */
         public string IsThereAWinner()
         {
-            string winner = null;
-            if(!FullBoard())
-            {
-                if(VerifyRows() != null)
-                {
-                    winner = VerifyRows();
-                }
-                if(VerifyDiagonals() != null)
-                {
-                    winner = VerifyDiagonals();
-                }
-                if(VerifyColumns() != null)
-                {
-                    winner = VerifyColumns();
-                }
-            }
-            return winner;
             //Verify(jugador1.Symbol)
             //Validaciones(jugador1.Symbol)
             //Validaciones(jugador2.Symbol)
             //Tiene que usar FullBoard para saber si es empate o si sigue el juego en curso
+            string winner = "Empate";
+
+            if (VerifyRows() != null)
+            {
+                winner = VerifyRows();
+                return winner;
+            }
+            if (VerifyDiagonals() != null)
+            {
+                winner = VerifyDiagonals();
+                return winner;
+            }
+            if (VerifyColumns() != null)
+            {
+                winner = VerifyColumns();
+                return winner;
+            }
+
+            if (FullBoard())
+            {
+                return "Empate";
+            }
+            return " ";
         }
 
         //Si el tablero esta lleno retorna true
         private bool FullBoard()
         {
-
-            return true;
+            int Counter = 0;
+            for (int i = 1; i < 10; i++)
+            {
+                if (IsOccupied(i))
+                {
+                    Counter++;
+                }
+            }
+            if (Counter == 9)
+            {
+                return true;
+            }
+            return false;
         }
 
         //Elije al primer Jugador : 'X' o 'O'
         public bool ChooseFirstPlayer()
         {
 
-            int num = new Random().Next(0,1);
-            if(num == 1) { 
+            int num = new Random().Next(0, 1);
+            if (num == 1)
+            {
                 return true;
             }
             return false;
@@ -113,58 +144,33 @@ namespace TicTacToe.Models
 
         private bool IsValidCell(int Position)
         {
-            return (!IsOccupied(Position) && Position >= 1 && Position <= 9);
+            return !IsOccupied(Position) && Position >= 1 && Position <= 9;
         }
 
         //Verifca todas las columnas y devuelve si se cumple un 3 en linea
         //Devuelve el caracter de las columnas
         private string VerifyColumns()
         {
-            /*1|2|3
-              4|5|6
-              7|8|9
-            */
-            //1|2|3|4|5|6|7|8|9
-            int Sumatory = 0, counter = 1 ;
-            for(int j=0; j < 3; j++) {
-                Sumatory = 0;
-                counter = 1;
-                /*
-                 Este for verifica solo 1 Columna , Ejemplo:
-                 Primera iteracion:
-                    1|
-                    4|
-                    7|
-
-                 */
-                for (int i = 0; i < 3; i++) { 
-                    if(charOccupied(1+Sumatory)==Map[1+j])
-                    {
-                        counter++;
-                        Sumatory += 3;
-                    }
-                }
-                if (counter == 3)
+            for (int j = 1; j < 4; j++)
+            {
+                if (IsOccupied(j) && charOccupied(j) == charOccupied(j + 3) && charOccupied(j) == charOccupied(j + 6))
                 {
-                    return ""+ Map[1+j];
+                    return "" + Map[j];
                 }
             }
-            
+
             return null;
         }
 
         //Verifica las diagonales
         private string VerifyDiagonals()
         {
-            /*1|2|3
-              4|5|6
-              7|8|9
-            */
-            if (charOccupied(1) == charOccupied(5) && charOccupied(1) == charOccupied(9))
+            //Agrege IsOccupied por que devolvia siempre null
+            if (IsOccupied(1) && charOccupied(1) == charOccupied(5) && charOccupied(1) == charOccupied(9))
             {
-                return ""+charOccupied(1);
+                return "" + charOccupied(1);
             }
-            if(charOccupied(3) == charOccupied(5) && charOccupied(3) == charOccupied(7))
+            if (charOccupied(3) == charOccupied(5) && charOccupied(3) == charOccupied(7) && IsOccupied(3))
             {
                 return "" + charOccupied(3);
             }
@@ -173,29 +179,16 @@ namespace TicTacToe.Models
 
 
         //Verifica todas las Filas y se fija si encuentra un 3 en linea
-        public string VerifyRows()
+        private string VerifyRows()
         {
-            /*1|2|3
-              4|5|6
-              7|8|9
-            */
-            //1|2|3|4|5|6|7|8|9
-            int counter = 1,Sumatory=0;
+            int Sumatory = 0;
             for (int j = 0; j < 3; j++)
             {
-                counter = 1;
-                for (int i = 0; i < 3; i++)
+
+                if (IsOccupied(1 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(2 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(3 + Sumatory))
                 {
-                    if (charOccupied(1 + Sumatory) == Map[1+i])
-                    {
-                        counter++;
-                    }
-                    if (counter == 3)
-                    {
-                        return "" + Map[1 + i];
-                    }
+                    return "" + Map[1 + Sumatory];
                 }
-                
                 Sumatory += 3;
             }
             return null;

@@ -1,15 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-<<<<<<< HEAD
-    "\\TicTacToe"
-  ],
-=======
     "\\TicTacToe",
+    "\\TicTacToe\\Console",
     "\\TicTacToe\\TicTacToe",
     "\\TicTacToe\\TicTacToe\\Models"
   ],
-  "SelectedNode": "\\TicTacToe\\TicTacToe\\Models\\Player.cs",
->>>>>>> 0f8c4ea1ba555c45dfefa9ca9f4e802148346bbf
+  "SelectedNode": "\\TicTacToe\\TicTacToe\\Models\\Board.cs",
   "PreviewInSolutionExplorer": false
 }
