@@ -6,12 +6,12 @@ Board TableMap = new Board();
 Player PlayerOne = new Player('X',"Juan");
 Player PlayerTwo = new Player('O', "Carlos");
 
-int turnos = 0;
+
 int pos = 1;
 while (TableMap.IsThereAWinner()==" ")
 {
     Console.WriteLine("Ingrese un numero");
-    if (turnos % 2 == 0)
+    if (TableMap.Turns % 2 == 0)
     {
 
         pos=Convert.ToInt32(Console.ReadLine());
@@ -26,8 +26,9 @@ while (TableMap.IsThereAWinner()==" ")
         pos = 1;
         
     }
-    turnos++;
     
+
+
     TableMap.Draw();
     Console.WriteLine("Ganador: "+ TableMap.IsThereAWinner());
     

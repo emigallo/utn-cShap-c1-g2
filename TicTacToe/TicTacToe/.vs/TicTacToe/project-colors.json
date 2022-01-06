@@ -15,7 +15,12 @@
       "ProjectGuid": "7a7a3924-b8c7-4f3a-8092-35edfdb0b3e6",
       "DisplayName": "Console",
       "ColorIndex": 1
+    },
+    "003e5e6d-8630-44bb-8adb-235c046a37f6": {
+      "ProjectGuid": "003e5e6d-8630-44bb-8adb-235c046a37f6",
+      "DisplayName": "Console",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

@@ -6,7 +6,7 @@ namespace TicTacToe.Models
     {
         private Dictionary<int, char> Map;
         /*Map[20]=Simbolo*/
-        private int Turns { get; set; }
+        public int Turns { get; private set; }
 
         public Board()
         {
@@ -38,14 +38,14 @@ namespace TicTacToe.Models
             if (IsValidCell(position))
             {
                 Map[position] = Symbol;
-
+                this.Turns++;
 
             }
             else
             {
                 Console.WriteLine("Debe seleccionar una posicion valida");
             }
-            this.Turns++;
+            
         }
 
         //Revisa todo el map y verifica quien gana
@@ -121,6 +121,7 @@ namespace TicTacToe.Models
             {
                 Map[i] = ' ';
             }
+            this.Turns = 0;
         }
 
         //Verificaciones
