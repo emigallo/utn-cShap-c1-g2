@@ -6,6 +6,8 @@ namespace TicTacToe.Models
     {
         private Dictionary<int, char> _map;
         /*Map[20]=Simbolo*/
+
+
         public int Turns { get; private set; }
 
         public Board()
