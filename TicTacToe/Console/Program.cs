@@ -16,15 +16,14 @@ while (TableMap.IsThereAWinner()==" ")
 
         pos=Convert.ToInt32(Console.ReadLine());
         PlayerOne.Mark(pos, TableMap);
-        pos = 1;
+    
         
     }
     else
     {
         pos = Convert.ToInt32(Console.ReadLine());
         PlayerTwo.Mark(pos, TableMap);
-        pos = 1;
-        
+               
     }
     
 

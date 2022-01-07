@@ -4,16 +4,16 @@ namespace TicTacToe.Models
 {
     public class Board
     {
-        private Dictionary<int, char> Map;
+        private Dictionary<int, char> _map;
         /*Map[20]=Simbolo*/
         public int Turns { get; private set; }
 
         public Board()
         {
-            Map = new Dictionary<int, char>();
+            _map = new Dictionary<int, char>();
             for (int i = 1; i < 10; i++)
             {
-                Map.Add(i, ' ');
+                _map.Add(i, ' ');
             }
             Turns = 0;
         }
@@ -22,7 +22,7 @@ namespace TicTacToe.Models
         {
             for (int i = 1; i < 10; i++)
             {
-                Console.Write(Map[i]);
+                Console.Write(_map[i]);
                 Console.Write('|');
                 if (i % 3 == 0)
                 {
@@ -37,7 +37,7 @@ namespace TicTacToe.Models
         {
             if (IsValidCell(position))
             {
-                Map[position] = Symbol;
+                _map[position] = Symbol;
                 this.Turns++;
 
             }
@@ -119,7 +119,7 @@ namespace TicTacToe.Models
         {
             for (int i = 1; i < 10; i++)
             {
-                Map[i] = ' ';
+                _map[i] = ' ';
             }
             this.Turns = 0;
         }
@@ -129,7 +129,7 @@ namespace TicTacToe.Models
         //Devuelve true si la celda esta ocupada
         private bool IsOccupied(int Position)
         {
-            return (Map[Position] == 'X' || Map[Position] == 'O');
+            return (_map[Position] == 'X' || _map[Position] == 'O');
         }
 
         //Devuelve el char de una celda ocupada
@@ -138,14 +138,14 @@ namespace TicTacToe.Models
             //Cambiar el if para que solo devuelva el simbolo si esta ocupada
             if (IsOccupied(Position) && Position >= 1 && Position <= 9)
             {
-                return Map[Position];
+                return _map[Position];
             }
             return ' ';
         }
 
         private bool IsValidCell(int Position)
         {
-            return !IsOccupied(Position) && Position >= 1 && Position <= 9;
+            return Position >= 1 && Position <= 9 && !IsOccupied(Position);
         }
 
         //Verifca todas las columnas y devuelve si se cumple un 3 en linea
@@ -156,7 +156,7 @@ namespace TicTacToe.Models
             {
                 if (IsOccupied(j) && charOccupied(j) == charOccupied(j + 3) && charOccupied(j) == charOccupied(j + 6))
                 {
-                    return "" + Map[j];
+                    return "" + _map[j];
                 }
             }
 
@@ -188,7 +188,7 @@ namespace TicTacToe.Models
 
                 if (IsOccupied(1 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(2 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(3 + Sumatory))
                 {
-                    return "" + Map[1 + Sumatory];
+                    return "" + _map[1 + Sumatory];
                 }
                 Sumatory += 3;
             }
