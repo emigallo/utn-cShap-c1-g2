@@ -69,22 +69,18 @@ namespace TicTacToe.Models
             //Validaciones(jugador1.Symbol)
             //Validaciones(jugador2.Symbol)
             //Tiene que usar FullBoard para saber si es empate o si sigue el juego en curso
-            string winner = "Empate";
 
             if (VerifyRows() != null)
             {
-                winner = VerifyRows();
-                return winner;
+                return VerifyRows();
             }
             if (VerifyDiagonals() != null)
             {
-                winner = VerifyDiagonals();
-                return winner;
+                return VerifyDiagonals();
             }
             if (VerifyColumns() != null)
             {
-                winner = VerifyColumns();
-                return winner;
+                return VerifyColumns();
             }
 
             if (FullBoard())
@@ -214,7 +210,14 @@ namespace TicTacToe.Models
             }
             return false;
         }
+        public void ShowWinnerLine()
+        {
 
+            Console.WriteLine(_winnerLine[1] + " | " + _winnerLine[2] + " | " + _winnerLine[3]);
+            Console.WriteLine(_winnerLine[4] + " | " + _winnerLine[5] + " | " + _winnerLine[6]);
+            Console.WriteLine(_winnerLine[7] + " | " + _winnerLine[8] + " | " + _winnerLine[9]);
+
+        }
         private void SetWinnerLine(int a, int b, int c, char symbol)
         {
             _winnerLine[a] = symbol;

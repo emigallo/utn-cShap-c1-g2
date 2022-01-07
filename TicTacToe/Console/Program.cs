@@ -33,3 +33,5 @@ while (TableMap.WhoIsTheWinner()==" ")
     
 }
 
+TableMap.ShowWinnerLine();
+
