@@ -10,6 +10,8 @@ namespace TicTacToe.Models
 
         public int Turns { get; private set; }
 
+        private Dictionary<int, char> _winnerLine;
+
         public Board()
         {
             _map = new Dictionary<int, char>();
@@ -18,6 +20,12 @@ namespace TicTacToe.Models
                 _map.Add(i, ' ');
             }
             Turns = 0;
+            _winnerLine = new Dictionary<int, char>();
+            for(int i = 0; i < 10; i++)
+            {
+                _winnerLine.Add(i, ' ');
+            }
+           
         }
 
         public void Draw()
@@ -55,7 +63,7 @@ namespace TicTacToe.Models
          *  si gano unjugador retorna susimbolo
          *  si no retorna null
          */
-        public string IsThereAWinner()
+        public string WhoIsTheWinner()
         {
             //Verify(jugador1.Symbol)
             //Validaciones(jugador1.Symbol)
@@ -135,7 +143,7 @@ namespace TicTacToe.Models
         }
 
         //Devuelve el char de una celda ocupada
-        private char charOccupied(int Position)
+        private char GetPlayerSymbol(int Position)
         {
             //Cambiar el if para que solo devuelva el simbolo si esta ocupada
             if (IsOccupied(Position) && Position >= 1 && Position <= 9)
@@ -156,12 +164,12 @@ namespace TicTacToe.Models
         {
             for (int j = 1; j < 4; j++)
             {
-                if (IsOccupied(j) && charOccupied(j) == charOccupied(j + 3) && charOccupied(j) == charOccupied(j + 6))
+                if (IsOccupied(j) && ComparePositions(j,j+3,j+6))
                 {
+                  
                     return "" + _map[j];
                 }
             }
-
             return null;
         }
 
@@ -169,13 +177,13 @@ namespace TicTacToe.Models
         private string VerifyDiagonals()
         {
             //Agrege IsOccupied por que devolvia siempre null
-            if (IsOccupied(1) && charOccupied(1) == charOccupied(5) && charOccupied(1) == charOccupied(9))
+            if (IsOccupied(1) && ComparePositions(1,5,9))
             {
-                return "" + charOccupied(1);
+                return "" + GetPlayerSymbol(1);
             }
-            if (charOccupied(3) == charOccupied(5) && charOccupied(3) == charOccupied(7) && IsOccupied(3))
+            if (IsOccupied(3) && ComparePositions(3,5,7))
             {
-                return "" + charOccupied(3);
+                return "" + GetPlayerSymbol(3);
             }
             return null;
         }
@@ -188,13 +196,30 @@ namespace TicTacToe.Models
             for (int j = 0; j < 3; j++)
             {
 
-                if (IsOccupied(1 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(2 + Sumatory) && charOccupied(1 + Sumatory) == charOccupied(3 + Sumatory))
+                if (IsOccupied(1 + Sumatory) && ComparePositions(1+Sumatory,2+Sumatory,3+Sumatory))
                 {
                     return "" + _map[1 + Sumatory];
                 }
                 Sumatory += 3;
             }
             return null;
+        }
+
+        private bool ComparePositions(int a, int b, int c)
+        {
+            if(GetPlayerSymbol(a) == GetPlayerSymbol(b) && GetPlayerSymbol(c) == GetPlayerSymbol(a))
+            {
+                SetWinnerLine(a, b, c, GetPlayerSymbol(a));
+                return true;
+            }
+            return false;
+        }
+
+        private void SetWinnerLine(int a, int b, int c, char symbol)
+        {
+            _winnerLine[a] = symbol;
+            _winnerLine[b] = symbol;
+            _winnerLine[c] = symbol;
         }
     }
 }
