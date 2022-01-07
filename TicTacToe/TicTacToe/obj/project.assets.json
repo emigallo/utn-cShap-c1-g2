@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mfernluc\\.nuget\\packages\\": {}
+    "C:\\Users\\rdesanvi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+      "projectUniqueName": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
       "projectName": "TicTacToe",
-      "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
-      "packagesPath": "C:\\Users\\mfernluc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
+      "projectPath": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+      "packagesPath": "C:\\Users\\rdesanvi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mfernluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rdesanvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

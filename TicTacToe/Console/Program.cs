@@ -8,7 +8,7 @@ Player PlayerTwo = new Player('O', "Carlos");
 
 
 int pos = 1;
-while (TableMap.IsThereAWinner()==" ")
+while (TableMap.WhoIsTheWinner()==" ")
 {
     Console.WriteLine("Ingrese un numero");
     if (TableMap.Turns % 2 == 0)
@@ -29,7 +29,7 @@ while (TableMap.IsThereAWinner()==" ")
 
 
     TableMap.Draw();
-    Console.WriteLine("Ganador: "+ TableMap.IsThereAWinner());
+    Console.WriteLine("Ganador: "+ TableMap.WhoIsTheWinner());
     
 }
 
