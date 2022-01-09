@@ -25,21 +25,18 @@ namespace UI
         public TicTacToe()
         {
             InitializeComponent();
-            _viewmodel = new TicTacToeViewModel();
+            this._viewmodel = new TicTacToeViewModel();
             DataContext = _viewmodel;
         }
 
+        //Tenemos que corregir este metodo
         private void ButtonPress(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-            //Sumo uno en cada uno por que el grid empieza en 0
             int ColumnPosition = (int)button.GetValue(Grid.ColumnProperty); //Devuelve la columna
             int RowPosition = (int)button.GetValue(Grid.RowProperty); //Devuelve la fila
-            int MarkPosition = _viewmodel.TransformCoordinates(RowPosition, ColumnPosition);
-            //Tenemos que corregir este metodo
-
-
-            //Falta llamar a la operacion marcar con las coordenadas y los valores que necesite
+            this._viewmodel.Mark(RowPosition, ColumnPosition);
+            
         }
     }
 }

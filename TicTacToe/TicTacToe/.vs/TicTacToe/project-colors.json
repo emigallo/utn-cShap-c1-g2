@@ -25,7 +25,12 @@
       "ProjectGuid": "c6342973-4b11-4f0f-aba3-32787d2cf36a",
       "DisplayName": "UI",
       "ColorIndex": 3
+    },
+    "513cd809-f968-4b64-a74a-b22ce08f9b5f": {
+      "ProjectGuid": "513cd809-f968-4b64-a74a-b22ce08f9b5f",
+      "DisplayName": "UI",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
