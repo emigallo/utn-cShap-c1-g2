@@ -76,9 +76,10 @@ namespace TicTacToe.Models
             {
                 return Response;
             }
-            if (VerifyColumns() != null)
+            Response = VerifyColumns();
+            if (Response != null)
             {
-                return VerifyColumns();
+                return Response;
             }
 
             if (FullBoard())
