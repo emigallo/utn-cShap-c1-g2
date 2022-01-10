@@ -51,10 +51,7 @@ namespace TicTacToe.Models
                 this.Turns++;
 
             }
-            else
-            {
-                Console.WriteLine("Debe seleccionar una posicion valida");
-            }
+
             
         }
 
@@ -69,14 +66,15 @@ namespace TicTacToe.Models
             //Validaciones(jugador1.Symbol)
             //Validaciones(jugador2.Symbol)
             //Tiene que usar FullBoard para saber si es empate o si sigue el juego en curso
-
-            if (VerifyRows() != null)
+            string Response = VerifyRows();
+            if (Response != null)
             {
-                return VerifyRows();
+                return Response;
             }
-            if (VerifyDiagonals() != null)
+            Response = VerifyDiagonals();
+            if (Response != null)
             {
-                return VerifyDiagonals();
+                return Response;
             }
             if (VerifyColumns() != null)
             {

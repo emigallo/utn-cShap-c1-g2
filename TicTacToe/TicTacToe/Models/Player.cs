@@ -7,7 +7,7 @@ namespace TicTacToe.Models
     {
         public bool IsFirstPlayer { get; set; }
         // public string Name { get; init; }
-        private char PlayerSymbol { get; init; }
+        public char PlayerSymbol { get; init; }
         //Simbolo para jugador o 'X' o 'O'
         private string Name { get; set; }
         public Player(char Symbol, string Names)
