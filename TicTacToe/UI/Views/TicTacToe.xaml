@@ -5,28 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="750">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Grid.Column="0" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="1" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="2" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="0" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="1" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="2" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="0" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="1" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-        <Button Grid.Column="2" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Hola"></TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Hola" HorizontalAlignment="Right"></TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Displa" HorizontalAlignment="Center"></TextBlock>
+        
+        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="1" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="2" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="0" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="2" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
 
 
+        </Grid>
     </Grid>
 </Window>

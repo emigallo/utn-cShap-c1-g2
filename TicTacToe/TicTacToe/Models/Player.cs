@@ -9,14 +9,13 @@ namespace TicTacToe.Models
         // public string Name { get; init; }
         public char PlayerSymbol { get; init; }
         //Simbolo para jugador o 'X' o 'O'
-        private string Name { get; set; }
+        public string Name { get; set; }
         public Player(char Symbol, string Names)
         {
             this.PlayerSymbol = Symbol;
             this.IsFirstPlayer = false;
             this.Name = Names;
         }
-
         //test numero 2 buenosdias
         public void Mark(int Position,Board TicTacToe)
         {

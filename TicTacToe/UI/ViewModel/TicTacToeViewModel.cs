@@ -13,8 +13,14 @@ namespace UI.ViewModel
     {
         /*Metodos a implementar:
          SetName(Player id) Cambia el nombre del jugador (Opcional) hacer en TicTacToe
-         Mark(Posicion) Marca la posicion en el tablero con el simbolo del jugador que juega en ese turno
+         Hacer una lista de botones(si es posible)
+         Dar la opcion de cambiar el nombre a los jugadores
+         Cuando hay un ganador , desactivar el resto de los botones y marcar la linea ganadora
+         Cuando el juego termina , habilitar el boton de Empezar de nuevo(opcional)
+         Antes que el juego empieze tener la opcion de "Tirar moneda" para elegir primer jugador
+         
         */
+
         private Board _board { get; set; }
         private Player _player1  { get; set; }
         private Player _player2 { get; set; }
