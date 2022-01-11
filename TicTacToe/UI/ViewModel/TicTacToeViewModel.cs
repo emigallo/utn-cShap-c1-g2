@@ -12,6 +12,7 @@ namespace UI.ViewModel
     public class TicTacToeViewModel
     {
         /*Metodos a implementar:
+         
          SetName(Player id) Cambia el nombre del jugador (Opcional) hacer en TicTacToe
          Hacer una lista de botones(si es posible)
          Dar la opcion de cambiar el nombre a los jugadores
