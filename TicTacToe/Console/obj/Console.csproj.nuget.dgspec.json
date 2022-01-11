@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\Console\\Console.csproj": {}
+    "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\Console\\Console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\Console\\Console.csproj": {
+    "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\Console\\Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\Console\\Console.csproj",
+        "projectUniqueName": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\Console\\Console.csproj",
         "projectName": "Console",
-        "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\Console\\Console.csproj",
-        "packagesPath": "C:\\Users\\mfernluc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\Console\\obj\\",
+        "projectPath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\Console\\Console.csproj",
+        "packagesPath": "C:\\Users\\xgalarre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\Console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mfernluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\xgalarre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-                "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+              "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+                "projectPath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+    "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "projectUniqueName": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
         "projectName": "TicTacToe",
-        "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
-        "packagesPath": "C:\\Users\\mfernluc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\obj\\",
+        "projectPath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\TicTacToe.csproj",
+        "packagesPath": "C:\\Users\\xgalarre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xgalarre\\Source\\Repos\\utn-cShap-c1-g2-si\\TicTacToe\\TicTacToe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mfernluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\xgalarre\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
