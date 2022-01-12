@@ -41,5 +41,11 @@ namespace UI
             button.Content = _viewmodel.Mark(RowPosition, ColumnPosition);
 
         }
+
+        private void RestartButton(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            _viewmodel.RestartGame();
+        }
     }
 }

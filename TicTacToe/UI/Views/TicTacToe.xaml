@@ -18,11 +18,16 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding PlayerOneName}"></TextBlock>
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding PlayerTwoName}" HorizontalAlignment="Right"></TextBlock>
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding ResultMessage}" HorizontalAlignment="Center" Background="Red"></TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="0" Text="{Binding PlayerOneName}" TextAlignment="Center"></TextBox>
+        <TextBox Grid.Row="0" Grid.Column="2" Text="{Binding PlayerTwoName}" TextAlignment="Center"></TextBox>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBox Text="{Binding WhoWon}" TextAlignment="Center"></TextBox>
+            <TextBox Text="{Binding PlayerOneName}" TextAlignment="Center"></TextBox>
+            <Button Content="Reiniciar!" Click="RestartButton"/>
+        </StackPanel>
+        
 
-        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" IsEnabled="{Binding IsPlayable}">
+        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" IsEnabled="{Binding IsPlaying}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -35,8 +40,8 @@
             </Grid.RowDefinitions>
             <Button Grid.Column="0" Grid.Row="0" Content="{Binding ButtonContent,Mode=OneWay}" Style="{StaticResource Cell}" Click="ButtonPress"/>
             <Button Grid.Column="1" Grid.Row="0" Content="{Binding ButtonContent,Mode=OneWay}" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="2" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="0" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying}"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying}"/>
             <Button Grid.Column="1" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
             <Button Grid.Column="2" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
             <Button Grid.Column="0" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
