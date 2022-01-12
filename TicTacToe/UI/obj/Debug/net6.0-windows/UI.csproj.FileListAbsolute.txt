@@ -23,3 +23,28 @@ C:\Users\mfernluc\Desktop\TicTacToe\TicTacToe\UI\obj\Debug\net6.0-windows\UI.gen
 C:\Users\mfernluc\Desktop\TicTacToe\TicTacToe\UI\bin\Debug\net6.0-windows\TicTacToe.dll
 C:\Users\mfernluc\Desktop\TicTacToe\TicTacToe\UI\bin\Debug\net6.0-windows\TicTacToe.pdb
 C:\Users\mfernluc\Desktop\TicTacToe\TicTacToe\UI\obj\Debug\net6.0-windows\UI.csproj.CopyComplete
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\UI.exe
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\UI.deps.json
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\UI.runtimeconfig.json
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\UI.dll
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\ref\UI.dll
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\UI.pdb
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\TicTacToe.dll
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\bin\Debug\net6.0-windows\TicTacToe.pdb
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.csproj.AssemblyReference.cache
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\Views\TicTacToe.g.cs
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.cache
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI_MarkupCompile.lref
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\App.baml
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\Views\TicTacToe.baml
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.g.resources
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.AssemblyInfoInputs.cache
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.AssemblyInfo.cs
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.csproj.CoreCompileInputs.cache
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.csproj.CopyComplete
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.dll
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\ref\UI.dll
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.pdb
+C:\Users\rdesanvi\OneDrive - NTT DATA EMEAL\Escritorio\utn-cShap-c1-g2\TicTacToe\UI\obj\Debug\net6.0-windows\UI.genruntimeconfig.cache

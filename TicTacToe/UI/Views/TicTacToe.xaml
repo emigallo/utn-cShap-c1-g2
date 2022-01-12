@@ -38,15 +38,15 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button Grid.Column="0" Grid.Row="0" Content="{Binding ButtonContent,Mode=OneWay}" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="1" Grid.Row="0" Content="{Binding ButtonContent,Mode=OneWay}" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="2" Grid.Row="0" Content="" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying}"/>
-            <Button Grid.Column="0" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying}"/>
-            <Button Grid.Column="1" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="2" Grid.Row="1" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="0" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="1" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
-            <Button Grid.Column="2" Grid.Row="2" Content="" Style="{StaticResource Cell}" Click="ButtonPress"/>
+            <Button Grid.Column="0" Grid.Row="0" Content="{Binding ButtonContent1}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying1}"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="{Binding ButtonContent2}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying2}"/>
+            <Button Grid.Column="2" Grid.Row="0" Content="{Binding ButtonContent3}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying3}"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="{Binding ButtonContent4}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying4}"/>
+            <Button Grid.Column="1" Grid.Row="1" Content="{Binding ButtonContent5}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying5}"/>
+            <Button Grid.Column="2" Grid.Row="1" Content="{Binding ButtonContent6}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying6}"/>
+            <Button Grid.Column="0" Grid.Row="2" Content="{Binding ButtonContent7}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying7}"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="{Binding ButtonContent8}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying8}"/>
+            <Button Grid.Column="2" Grid.Row="2" Content="{Binding ButtonContent9}" Style="{StaticResource Cell}" Click="ButtonPress" IsEnabled="{Binding ButtonsPlaying9}"/>
 
 
         </Grid>

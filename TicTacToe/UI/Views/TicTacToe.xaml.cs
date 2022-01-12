@@ -37,8 +37,8 @@ namespace UI
             int ColumnPosition = (int)button.GetValue(Grid.ColumnProperty); //Devuelve la columna
             int RowPosition = (int)button.GetValue(Grid.RowProperty); //Devuelve la fila
             //this._viewmodel.Mark(RowPosition, ColumnPosition)
-            button.IsEnabled = false;
-            button.Content = _viewmodel.Mark(RowPosition, ColumnPosition);
+            //button.IsEnabled = false;
+            _viewmodel.Mark(RowPosition, ColumnPosition);
 
         }
 
