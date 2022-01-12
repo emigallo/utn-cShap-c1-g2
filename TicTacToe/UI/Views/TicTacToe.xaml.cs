@@ -27,6 +27,7 @@ namespace UI
             InitializeComponent();
             this._viewmodel = new TicTacToeViewModel();
             DataContext = _viewmodel;
+            
         }
 
         //Tenemos que corregir este metodo
