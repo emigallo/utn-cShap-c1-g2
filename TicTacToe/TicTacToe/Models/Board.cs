@@ -84,7 +84,7 @@ namespace TicTacToe.Models
 
             if (FullBoard())
             {
-                return "Empate";
+                return "Draw";
             }
             return " ";
         }

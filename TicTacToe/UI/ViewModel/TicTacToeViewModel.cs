@@ -17,18 +17,38 @@ namespace UI.ViewModel
          SetName(Player id) Cambia el nombre del jugador (Opcional) hacer en TicTacToe (Completado)
          Dar la opcion de cambiar el nombre a los jugadores (Completado)
          Cuando hay un ganador , desactivar el resto de los botones (Completado)
-         Cuando el juego termina , habilitar el boton de Empezar de nuevo(opcional) (En curso)
-         Antes que el juego empieze tener la opcion de "Tirar moneda" para elegir primer jugador(opcional)
-         Mostrar la linea ganadora del jugador que la realizo (Ultimo)
+         Cuando el juego termina , habilitar el boton de Empezar de nuevo(opcional) (Completado)
+         Mostrar la linea ganadora del jugador que la realizo (Ultimo)??
          
         */
         private Board _board { get; set; }
         private Player _player1  { get; set; }
         private Player _player2 { get; set; }
 
-        private List<bool> ButtonsPlaying = new List<bool> ();
-
-        private List<string> ButtonsContent = new List<string> ();
+        private int _scoreOne = 0;
+        private int _scoreTwo = 0;
+        public int ScoreOne {
+            get 
+            {
+                return this._scoreOne;
+            }
+            set
+            {
+                this._scoreOne = value;
+                OnPropertyNameChanged(nameof(ScoreOne));
+            }
+        }
+        public int ScoreTwo {
+            get
+            {
+                return this._scoreTwo;
+            }
+            set
+            {
+                this._scoreTwo = value;
+                OnPropertyNameChanged(nameof(ScoreTwo));
+            }
+        }
 
         private string _buttonContent1 = " ";
         public string ButtonContent1 {
@@ -312,7 +332,7 @@ namespace UI.ViewModel
             }
         }
 
-        private string _whoWon = "asd";
+        private string _whoWon = "";
         public string WhoWon
         {
             get
@@ -393,18 +413,20 @@ namespace UI.ViewModel
         private void TheWinnerIs(string Winner)
         {
             Player WinPlayer = GetNextPlayer(this._player1,this._player2);
-            if (Winner == "Empate")
+            if (Winner == "Draw")
             {
                 this.WhoWon = Winner;
                 return;
             }
             if(WinPlayer == this._player1)
             {
-                this.WhoWon = "El Ganador es: " + _nameTwo;
+                this.WhoWon = "Winner: " + _nameTwo;
+                this.ScoreTwo++;
             }
             else
             {
-                this.WhoWon = "El Ganador es: " + _nameOne;
+                this.WhoWon = "Winner: " + _nameOne;
+                this.ScoreOne++;
             }
 
             
@@ -417,6 +439,7 @@ namespace UI.ViewModel
             this.ButtonsPlaying1 = true;
             this.IsPlaying = true;
             this.ButtonContent1 = " ";
+            this.WhoWon = "";
             this._board.ClearBoard();
             ReWriteSelected();
         }

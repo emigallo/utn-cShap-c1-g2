@@ -5,11 +5,26 @@
              StartupUri="Views/TicTacToe.xaml">
     <Application.Resources>
         <Style TargetType="Button" x:Key="Cell">
-            <Setter Property="Background" Value="#8b8b8b"/>
-            <Setter Property="BorderBrush" Value="#c6c6c6"/>
+            <Setter Property="Background" Value="#66AABB"/>
+            <Setter Property="BorderBrush" Value="#5599AA"/>
             <Setter Property="BorderThickness" Value="10"/>
+            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            
+        </Style>
+        <Style TargetType="TextBox" x:Key="TextBoxStyle">
+            <Setter Property="Background" Value="#FAFAFA"/>
+            <Setter Property="MaxLength" Value="12"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+        <Style TargetType="Label" x:Key="ScoreBoard">
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Label" x:Key="ScoreLabel" BasedOn="{StaticResource ScoreBoard}">
             <Setter Property="FontSize" Value="20"/>
         </Style>
-         
     </Application.Resources>
 </Application>

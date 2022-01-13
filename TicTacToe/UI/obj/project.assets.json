@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rdesanvi\\.nuget\\packages\\": {}
+    "C:\\Users\\mfernluc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\UI\\UI.csproj",
-      "packagesPath": "C:\\Users\\rdesanvi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\UI\\obj\\",
+      "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\mfernluc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rdesanvi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mfernluc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
-              "projectPath": "C:\\Users\\rdesanvi\\OneDrive - NTT DATA EMEAL\\Escritorio\\utn-cShap-c1-g2\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
+            "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj": {
+              "projectPath": "C:\\Users\\mfernluc\\Desktop\\TicTacToe\\TicTacToe\\TicTacToe\\TicTacToe.csproj"
             }
           }
         }
@@ -86,7 +86,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
